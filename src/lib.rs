@@ -204,7 +204,7 @@ impl BuddySystem {
 
     /// Deallocate the memory.
     /// SAFETY: The raw ptr passed-in should be the one handed out previously.
-    fn dealloc(&mut self, ptr: *mut u8, layout: Layout) {
+    pub fn dealloc(&mut self, ptr: *mut u8, layout: Layout) {
         // check ptr in range [self.base, self.actual_end)
         let mut raw_addr = ptr as usize;
         #[cfg(debug_assertions)]
