@@ -1,9 +1,12 @@
 [package]
 name = "allocator"
+description = "Thread-unsafe, panic-free buddy system allocator."
 version = "0.1.0"
-authors = ["KuangjuX <qcx@tju.edu.cn>"]
+authors = ["Jaic1 <506933131@qq.com>", "KuangjuX <qcx@tju.edu.cn>"]
 edition = "2018"
+license = "MIT"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bit_field = "0.10.0"
