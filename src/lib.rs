@@ -138,7 +138,7 @@ impl BuddySystem {
     }
 
     /// Allocate a block of memory satisifying the layout.
-    fn alloc(&mut self, layout: Layout) -> *mut u8 {
+    pub fn alloc(&mut self, layout: Layout) -> *mut u8 {
         if layout.size() == 0 {
             return ptr::null_mut();
         }
